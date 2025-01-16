@@ -1,4 +1,3 @@
-
 ## 📚 Kullanım
 
 Uygulama başlatıldıktan sonra:
@@ -35,3 +34,55 @@ Proje Linki: [https://github.com/enes-yigit/Turkish-mythology-ontology](https://
 - Türk mitolojisi kaynakları ve araştırmacıları
 - Açık kaynak toplulukları
 - Projeye katkıda bulunan tüm geliştiriciler
+
+Frontend başarıyla başlatıldığında:
+- http://localhost:3001 adresinde çalışacaktır
+- Tarayıcınızda otomatik olarak açılacaktır
+
+Olası Hatalar ve Çözümleri:
+- `node_modules` ile ilgili hatalar: `rm -rf node_modules && npm install`
+- Port 3001 kullanımda ise: `.env` dosyasında `PORT=3002` ekleyin
+- Module not found hataları: `npm install` komutunu tekrar çalıştırın
+
+### 4. Ontoloji Dosyası Kontrolü
+
+Backend'in ontoloji dosyasını doğru şekilde okuduğundan emin olmak için:
+
+1. `backend/src/main/resources/` dizininde `ontology.owl` dosyasının var olduğunu kontrol edin
+2. http://localhost:8080/api/ontology/test endpoint'ini tarayıcınızda açın
+3. Başarılı bir yanıt almalısınız
+
+### 5. Sistem Testi
+
+Kurulum başarılı ise:
+
+1. Frontend: http://localhost:3001 adresine gidin
+2. Soldaki menüden bir sorgu seçin
+3. "Sorgula" butonuna tıklayın
+4. Sonuçları tablo formatında görmelisiniz
+
+## 💡 Geliştirme İpuçları
+
+### Backend Geliştirme
+- `backend/src/main/java/com/ontology/api/controller/` dizininde controller'ları bulabilirsiniz
+- Yeni SPARQL sorguları eklemek için `OntologyController.java` dosyasını düzenleyin
+- Ontoloji modelini güncellemek için Protégé kullanabilirsiniz
+
+### Frontend Geliştirme
+- `frontend/src/App.js` ana uygulama bileşenini içerir
+- `frontend/src/components/` dizininde diğer bileşenleri bulabilirsiniz
+- Yeni sorgular eklemek için `competencyQuestions` array'ini güncelleyin
+
+### Ontoloji Geliştirme
+- Ontoloji dosyası: `backend/src/main/resources/ontology.owl`
+- Protégé ile düzenleyebilirsiniz
+- Değişikliklerden sonra backend'i yeniden başlatın
+
+## 🔍 Test Etme
+
+Kurulumun başarılı olduğunu kontrol etmek için:
+
+1. Backend Testi:
+```bash
+curl http://localhost:8080/api/ontology/test
+```
