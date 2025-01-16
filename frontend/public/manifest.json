@@ -1,0 +1,15 @@
+{
+  "short_name": "Türk Mitolojisi",
+  "name": "Türk Mitolojisi Ontoloji Sorgulama Sistemi",
+  "icons": [
+    {
+      "src": "turk-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#c53030",
+  "background_color": "#ffffff"
+}

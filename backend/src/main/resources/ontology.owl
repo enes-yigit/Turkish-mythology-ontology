@@ -1,0 +1,1399 @@
+@prefix : <http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#> .
+
+<http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames> rdf:type owl:Ontology ;
+                                                                              rdfs:comment "Turks mitology iin pc games" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#barındırır
+:barındırır rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#bağlıOlduğuKültür
+:bağlıOlduğuKültür rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Kahramanlar ;
+                   rdfs:range :KültürelSistem ;
+                   rdfs:comment "Kahramanın bağlı olduğu veya temsil ettiği kültürel sistem." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#bağlıOlduğuİnanç
+:bağlıOlduğuİnanç rdf:type owl:ObjectProperty ;
+                  rdfs:domain :MitolojikVarlık ;
+                  rdfs:range :İnançSistemi ;
+                  rdfs:comment "Mitolojik Varlığın hangi inanç sistemiyle ilişkili olduğunu gösterir." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#belirler
+:belirler rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#bulunur
+:bulunur rdf:type owl:ObjectProperty ;
+         rdfs:domain :MitolojikVarlık ;
+         rdfs:range :KutsalAlanlar ;
+         rdfs:comment "Mitolojik varlıkların hangi kutsal alanda veya mekânda bulunduğu." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#etkilenir
+:etkilenir rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#etkilenır
+:etkilenır rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#etkiler
+:etkiler rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#etkileşir
+:etkileşir rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#gerçekleştirir
+:gerçekleştirir rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#gucVerir
+:gucVerir rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#katılırDiplomasi
+:katılırDiplomasi rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Kahramanlar ;
+                  rdfs:range :DiplomasiSistemi ;
+                  rdfs:comment "Kahramanın bir diplomasi sistemine katılması." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#katılırSavaş
+:katılırSavaş rdf:type owl:ObjectProperty ;
+              rdfs:domain :Kahramanlar ;
+              rdfs:range :SavaşSistemi ;
+              rdfs:comment "Kahramanın bir savaş sistemine katılması." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kontrolEder
+:kontrolEder rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#korur
+:korur rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kullanir
+:kullanir rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kullanır
+:kullanır rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ritüelKullanır
+:ritüelKullanır rdf:type owl:ObjectProperty ;
+                rdfs:domain :MitolojikVarlık ;
+                rdfs:range :RitüelNesneleri ;
+                rdfs:comment "Mitolojik varlığın (Kahraman, Ruh, vb.) kullandığı ritüel nesnesi." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#sağlar
+:sağlar rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#yonetir
+:yonetir rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#yönetir
+:yönetir rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#üretir
+:üretir rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#şekillendirir
+:şekillendirir rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ad
+:ad rdf:type owl:DatatypeProperty ;
+    rdfs:domain :MitolojikVarlık ;
+    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#aktif_durum
+:aktif_durum rdf:type owl:DatatypeProperty ;
+             rdfs:domain :OyunMekanik ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#boy_adı
+:boy_adı rdf:type owl:DatatypeProperty ;
+         rdfs:domain :BoylarSistemi ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#boy_bağı
+:boy_bağı rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Kahramanlar ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#boyut
+:boyut rdf:type owl:DatatypeProperty ;
+       rdfs:domain :YerVeMekan ;
+       rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#büyü_gücü
+:büyü_gücü rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Tılsımlar ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#dayanıklılık
+:dayanıklılık rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Silahlar ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ekosistem_türü
+:ekosistem_türü rdf:type owl:DatatypeProperty ;
+                rdfs:domain :DoğalAlanlar ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#etki_alanı
+:etki_alanı rdf:type owl:DatatypeProperty ;
+            rdfs:domain :MitolojikVarlık ,
+                        :OyunMekanik ,
+                        :Tılsımlar ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#etki_süresi
+:etki_süresi rdf:type owl:DatatypeProperty ;
+             rdfs:domain :DiplomasiSistemi ;
+             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#etki_zamanı
+:etki_zamanı rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Ruhlar ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#eğitimKatkısı
+:eğitimKatkısı rdf:type owl:DatatypeProperty ;
+               rdfs:domain :OyunMekanik ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Oyun mekaniğinin, mitoloji ve kültürel öğrenmeyi destekleme düzeyi veya metni." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#gerekli_güç
+:gerekli_güç rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RitüelNesneleri ;
+             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#görev_türü
+:görev_türü rdf:type owl:DatatypeProperty ;
+            rdfs:domain :GörevSistemi ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#güç_seviyesi
+:güç_seviyesi rdf:type owl:DatatypeProperty ;
+              rdfs:domain :BoylarSistemi ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#hakimiyet_alanı
+:hakimiyet_alanı rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Tanrılar ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#hasar_gücü
+:hasar_gücü rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Silahlar ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#inanç_türü
+:inanç_türü rdf:type owl:DatatypeProperty ;
+            rdfs:domain :İnançSistemi ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kaynak_türü
+:kaynak_türü rdf:type owl:DatatypeProperty ;
+             rdfs:domain :KaynakYönetimi ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kaynak_zenginliği
+:kaynak_zenginliği rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :YaşamAlanları ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#konum
+:konum rdf:type owl:DatatypeProperty ;
+       rdfs:domain :YerVeMekan ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#koruyucu_varlık
+:koruyucu_varlık rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :KutsalAlanlar ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kullanım_hakkı
+:kullanım_hakkı rdf:type owl:DatatypeProperty ;
+                rdfs:domain :KutsalÖğe ;
+                rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kullanım_süresi
+:kullanım_süresi rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Tılsımlar ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kullanım_şartı
+:kullanım_şartı rdf:type owl:DatatypeProperty ;
+                rdfs:domain :RitüelNesneleri ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kulturel_aktif_durum
+:kulturel_aktif_durum rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :KültürelSistem ;
+                      rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kulturel_etki_alanı
+:kulturel_etki_alanı rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :KültürelSistem ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kutsal_günler
+:kutsal_günler rdf:type owl:DatatypeProperty ;
+               rdfs:domain :İnançSistemi ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kutsal_güç_türü
+:kutsal_güç_türü rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Tanrılar ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kutsiyet_seviyesi
+:kutsiyet_seviyesi rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :KutsalÖğe ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#kutsiyet_türü
+:kutsiyet_türü rdf:type owl:DatatypeProperty ;
+               rdfs:domain :KutsalAlanlar ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#köken_hikayesi
+:köken_hikayesi rdf:type owl:DatatypeProperty ;
+                rdfs:domain :KutsalÖğe ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#maksimum_kapasite
+:maksimum_kapasite rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :KaynakYönetimi ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#mekan_adı
+:mekan_adı rdf:type owl:DatatypeProperty ;
+           rdfs:domain :YerVeMekan ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#mekan_etki_alanı
+:mekan_etki_alanı rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :YerVeMekan ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#mekanik_adı
+:mekanik_adı rdf:type owl:DatatypeProperty ;
+             rdfs:domain :OyunMekanik ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#nesne_adı
+:nesne_adı rdf:type owl:DatatypeProperty ;
+           rdfs:domain :KutsalÖğe ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#nüfus
+:nüfus rdf:type owl:DatatypeProperty ;
+       rdfs:domain :BoylarSistemi ;
+       rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#nüfus_kapasitesi
+:nüfus_kapasitesi rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :YaşamAlanları ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ritüel_gereksinimleri
+:ritüel_gereksinimleri rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :İnançSistemi ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ritüel_gücü
+:ritüel_gücü rdf:type owl:DatatypeProperty ;
+             rdfs:domain :KutsalAlanlar ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ritüel_türü
+:ritüel_türü rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RitüelNesneleri ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ruh_türü
+:ruh_türü rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Ruhlar ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#savunma_gücü
+:savunma_gücü rdf:type owl:DatatypeProperty ;
+              rdfs:domain :YaşamAlanları ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#sistem_adı
+:sistem_adı rdf:type owl:DatatypeProperty ;
+            rdfs:domain :KültürelSistem ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#süre_sınırı
+:süre_sınırı rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GörevSistemi ;
+             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#tehlike_seviyesi
+:tehlike_seviyesi rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :DoğalAlanlar ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#töre_türü
+:töre_türü rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TöreSistemi ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#unvan
+:unvan rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Kahramanlar ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#uygulama_alanı
+:uygulama_alanı rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TöreSistemi ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#yaratık_güç_seviyesi
+:yaratık_güç_seviyesi rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Yaratıklar ;
+                      rdfs:range xsd:integer ;
+                      rdfs:comment "Yaratığın güç seviyesini tanımlar." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#yaşam_alanı
+:yaşam_alanı rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Yaratıklar ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#yenilenme_hızı
+:yenilenme_hızı rdf:type owl:DatatypeProperty ;
+                rdfs:domain :KaynakYönetimi ;
+                rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#zorluk_seviyesi
+:zorluk_seviyesi rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :OyunMekanik ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#önem_derecesi
+:önem_derecesi rdf:type owl:DatatypeProperty ;
+               rdfs:domain :KültürelSistem ;
+               rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#özel_yetenek
+:özel_yetenek rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Silahlar ;
+              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BoylarSistemi
+:BoylarSistemi rdf:type owl:Class ;
+               rdfs:subClassOf :KültürelSistem .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#DiplomasiSistemi
+:DiplomasiSistemi rdf:type owl:Class ;
+                  rdfs:subClassOf :OyunMekanik .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#DoğalAlanlar
+:DoğalAlanlar rdf:type owl:Class ;
+              rdfs:subClassOf :YerVeMekan .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GörevSistemi
+:GörevSistemi rdf:type owl:Class ;
+              rdfs:subClassOf :OyunMekanik .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Kahramanlar
+:Kahramanlar rdf:type owl:Class ;
+             rdfs:subClassOf :MitolojikVarlık .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KaynakYönetimi
+:KaynakYönetimi rdf:type owl:Class ;
+                rdfs:subClassOf :OyunMekanik .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutsalAlanlar
+:KutsalAlanlar rdf:type owl:Class ;
+               rdfs:subClassOf :YerVeMekan .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutsalÖğe
+:KutsalÖğe rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KültürelSistem
+:KültürelSistem rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#MitolojikVarlık
+:MitolojikVarlık rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#OyunMekanik
+:OyunMekanik rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#RitüelNesneleri
+:RitüelNesneleri rdf:type owl:Class ;
+                 rdfs:subClassOf :KutsalÖğe .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Ruhlar
+:Ruhlar rdf:type owl:Class ;
+        rdfs:subClassOf :MitolojikVarlık .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#SavaşSistemi
+:SavaşSistemi rdf:type owl:Class ;
+              rdfs:subClassOf :OyunMekanik .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Silahlar
+:Silahlar rdf:type owl:Class ;
+          rdfs:subClassOf :KutsalÖğe .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Tanrılar
+:Tanrılar rdf:type owl:Class ;
+          rdfs:subClassOf :MitolojikVarlık .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#TöreSistemi
+:TöreSistemi rdf:type owl:Class ;
+             rdfs:subClassOf :KültürelSistem .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Tılsımlar
+:Tılsımlar rdf:type owl:Class ;
+           rdfs:subClassOf :KutsalÖğe .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Yaratıklar
+:Yaratıklar rdf:type owl:Class ;
+            rdfs:subClassOf :MitolojikVarlık .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#YaşamAlanları
+:YaşamAlanları rdf:type owl:Class ;
+               rdfs:subClassOf :YerVeMekan .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#YerVeMekan
+:YerVeMekan rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#İnançSistemi
+:İnançSistemi rdf:type owl:Class ;
+              rdfs:subClassOf :KültürelSistem .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AlevTilsimi
+:AlevTilsimi rdf:type owl:NamedIndividual ,
+                      :Tılsımlar ;
+             :büyü_gücü 15 ;
+             :etki_alanı "Yakıcı alev büyüsü" ;
+             :kullanım_süresi 5 ;
+             :nesne_adı "Alev Tılsımı" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Alkarısı
+:Alkarısı rdf:type owl:NamedIndividual ,
+                   :Yaratıklar ;
+          :bulunur :ÖtükenOrmanı ;
+          :yaratık_güç_seviyesi 8 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AltayDaglari
+:AltayDaglari rdf:type owl:NamedIndividual ,
+                       :DoğalAlanlar ;
+              :etkilenir :Şamanizm ;
+              :boyut 5000 ;
+              :ekosistem_türü "Dağ" ;
+              :mekan_adı "Altay Dağları" ;
+              :mekan_etki_alanı "Zorlu dağ ekosistemi" ;
+              :tehlike_seviyesi 6 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AnaGörevler
+:AnaGörevler rdf:type owl:NamedIndividual ,
+                      :GörevSistemi ;
+             :üretir :KutluAteş ;
+             :zorluk_seviyesi 9 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AtBiniciligi
+:AtBiniciligi rdf:type owl:NamedIndividual ,
+                       :OyunMekanik ;
+              :aktif_durum "false"^^xsd:boolean ;
+              :etki_alanı "Hızlı hareket ve süvari taktikleri" ;
+              :mekanik_adı "At Biniciliği Mekaniği" ;
+              :zorluk_seviyesi 4 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AtSürüleri
+:AtSürüleri rdf:type owl:NamedIndividual ,
+                     :KaynakYönetimi ;
+            :kaynak_türü "At" ;
+            :maksimum_kapasite 100 ;
+            :yenilenme_hızı 3 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AteşTanrısı
+:AteşTanrısı rdf:type owl:NamedIndividual ,
+                      :Tanrılar ;
+             :gucVerir :BilgeHan ;
+             :yonetir :GökTepesi ;
+             :ad "Ateş Tanrısı" ;
+             :hakimiyet_alanı "Ateş, tutku ve sıcaklık" ;
+             :kutsal_güç_türü "Alev ve ışık" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AtillaHan
+:AtillaHan rdf:type owl:NamedIndividual ,
+                    :Kahramanlar ;
+           :kullanır :UluKılıç ;
+           :ad "Atilla Han" ;
+           :unvan "Büyük Han" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AtliOkcuSistemi
+:AtliOkcuSistemi rdf:type owl:NamedIndividual ,
+                          :SavaşSistemi ;
+                 :kullanir :AtSürüleri ;
+                 :aktif_durum "true"^^xsd:boolean ;
+                 :etki_alanı "Süvari okçuluk" ;
+                 :mekanik_adı "Atlı okçu mekaniği" ;
+                 :zorluk_seviyesi 5 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AvKutlamalari
+:AvKutlamalari rdf:type owl:NamedIndividual ,
+                        :KültürelSistem ;
+               :kulturel_aktif_durum "true"^^xsd:boolean ;
+               :kulturel_etki_alanı "Boylar arasında avcılık festivalleri" ;
+               :sistem_adı "Av Kutlamaları" ;
+               :önem_derecesi 6 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AvToreleri
+:AvToreleri rdf:type owl:NamedIndividual ,
+                     :TöreSistemi ;
+            :belirler :BarisAnlasmasi1 ;
+            :töre_türü "Av öncesi kurban töresi" ;
+            :uygulama_alanı "Bozkır boylarında uygulanır" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#AybikeHatun
+:AybikeHatun rdf:type owl:NamedIndividual ,
+                      :Kahramanlar ;
+             :etkileşir :BarışMeclisi ;
+             :kullanır :KutluMızrak ;
+             :ad "Aybike Hatun" ;
+             :boy_bağı "PeçenekBoyu" ;
+             :unvan "Göğün Kızı" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BarisAnlasmasi1
+:BarisAnlasmasi1 rdf:type owl:NamedIndividual ,
+                          :DiplomasiSistemi ;
+                 :etkilenır :SavaşTöreleri ;
+                 :aktif_durum "true"^^xsd:boolean ;
+                 :etki_alanı "Kan davası olan boyları barıştırma" ;
+                 :etki_süresi 2 ;
+                 :mekanik_adı "Hızlı barış mekaniği" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BarışMeclisi
+:BarışMeclisi rdf:type owl:NamedIndividual ,
+                       :DiplomasiSistemi ;
+              :etkilenır :SavaşTöreleri ;
+              :aktif_durum "true"^^xsd:boolean ;
+              :etki_alanı "Kahramanlar arasında barışı sağlama" ;
+              :etki_süresi 3 ;
+              :mekanik_adı "Barış Meclisi mekaniği" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BereketAna
+:BereketAna rdf:type owl:NamedIndividual ,
+                     :Tanrılar ;
+            :gucVerir :KaraTegin ;
+            :yonetir :SuKutsalMeras ;
+            :ad "Bereket Ana" ;
+            :hakimiyet_alanı "Hasat ve canlıların çoğalması" ;
+            :kutsal_güç_türü "Toprağın verimi ve doğum" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BilgeHan
+:BilgeHan rdf:type owl:NamedIndividual ,
+                   :Kahramanlar ;
+          :etkileşir :BoylarArasıDiplomasi ;
+          :kullanır :KutluKılıç ;
+          :ad "Bilge Han" ;
+          :boy_bağı "UygurBoyu" ;
+          :unvan "Bilge" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BoyIttifaki
+:BoyIttifaki rdf:type owl:NamedIndividual ,
+                      :DiplomasiSistemi ;
+             :etkilenır :SavaşTöreleri ;
+             :aktif_durum "true"^^xsd:boolean ;
+             :etki_alanı "İki büyük boy arasında askeri yardımlaşma" ;
+             :etki_süresi 5 ;
+             :mekanik_adı "İttifak mekaniği" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BoyYurtları
+:BoyYurtları rdf:type owl:NamedIndividual ,
+                      :YaşamAlanları ;
+             :sağlar :KutsalKaynaklar .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BoylarArasıDiplomasi
+:BoylarArasıDiplomasi rdf:type owl:NamedIndividual ,
+                               :DiplomasiSistemi ;
+                      :etkilenir :KutsalKaynaklar .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BozAtliEren
+:BozAtliEren rdf:type owl:NamedIndividual ,
+                      :MitolojikVarlık ;
+             :ad "Boz Atlı Eren" ;
+             :etki_alanı "Zor durumdaki kahramanlara yol gösterme" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BozkirDiyari
+:BozkirDiyari rdf:type owl:NamedIndividual ,
+                       :DoğalAlanlar ;
+              :etkilenir :Şamanizm ;
+              :boyut 10000 ;
+              :ekosistem_türü "Bozkır" ;
+              :mekan_adı "Bozkır Diyarı" ;
+              :mekan_etki_alanı "Uçsuz bucaksız bozkırlar" ;
+              :tehlike_seviyesi 3 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BozkirRuhu
+:BozkirRuhu rdf:type owl:NamedIndividual ,
+                     :Ruhlar ;
+            :ad "Bozkır Ruhu" ;
+            :etki_zamanı "Gün batımı" ;
+            :ruh_türü "Bozkırda yol gösteren rehber" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BuzTilsimi
+:BuzTilsimi rdf:type owl:NamedIndividual ,
+                     :Tılsımlar ;
+            :büyü_gücü 12 ;
+            :etki_alanı "Dondurucu büyü etkisi" ;
+            :kullanım_süresi 4 ;
+            :nesne_adı "Buz Tılsımı" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BuzTrollu
+:BuzTrollu rdf:type owl:NamedIndividual ,
+                    :Yaratıklar ;
+           :ad "Buz Trolü" ;
+           :etki_alanı "Buz nefesi ve sert darbe" ;
+           :yaratık_güç_seviyesi 9 ;
+           :yaşam_alanı "KutupTundrasi" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#BüyükKurultayHazırlığı
+:BüyükKurultayHazırlığı rdf:type owl:NamedIndividual ,
+                                 :GörevSistemi ;
+                        :üretir :KutluAteş ;
+                        :görev_türü "Boylar arası kurultay öncesi hazırlık" ;
+                        :süre_sınırı 4 ;
+                        :zorluk_seviyesi 4 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#CengizHan
+:CengizHan rdf:type owl:NamedIndividual ,
+                    :Kahramanlar ;
+           :bağlıOlduğuKültür :SavaşTöreleri ;
+           :katılırDiplomasi :BoylarArasıDiplomasi ;
+           :katılırSavaş :KutsalSavaş ;
+           :kullanır :UluKılıç ;
+           :ad "Cengiz Han" ;
+           :unvan "Büyük Fatih" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#DağRuhu
+:DağRuhu rdf:type owl:NamedIndividual ,
+                  :Ruhlar ;
+         :ad "Dağ Ruhu" ;
+         :etki_zamanı "Sadece şafak vakti" ;
+         :ruh_türü "Yüce zirve koruyucusu" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#DedeKorkutGelenegi
+:DedeKorkutGelenegi rdf:type owl:NamedIndividual ,
+                             :KültürelSistem ;
+                    :kulturel_aktif_durum "true"^^xsd:boolean ;
+                    :kulturel_etki_alanı "Ozanlık ve destan anlatımı" ;
+                    :sistem_adı "Dede Korkut Geleneği" ;
+                    :önem_derecesi 8 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#DevGeyik
+:DevGeyik rdf:type owl:NamedIndividual ,
+                   :Yaratıklar ;
+          :ad "Dev Geyik" ;
+          :etki_alanı "Boynuz saldırısı" ;
+          :yaratık_güç_seviyesi 5 ;
+          :yaşam_alanı "BozkirDiyari" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#DoganlarHucumu
+:DoganlarHucumu rdf:type owl:NamedIndividual ,
+                         :SavaşSistemi ;
+                :kullanir :YünDepolari ;
+                :aktif_durum "false"^^xsd:boolean ;
+                :etki_alanı "Hızlı yaklaşıp geri çekilme taktiği" ;
+                :mekanik_adı "Doğanlar Hücumu" ;
+                :zorluk_seviyesi 6 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ElciMuzakeresi
+:ElciMuzakeresi rdf:type owl:NamedIndividual ,
+                         :DiplomasiSistemi ;
+                :etkilenır :SavaşTöreleri ;
+                :aktif_durum "false"^^xsd:boolean ;
+                :etki_alanı "Çatışmayı bitirmek için elçi gönderimi" ;
+                :etki_süresi 3 ;
+                :mekanik_adı "Diplomatik elçi mekaniği" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Erlik
+:Erlik rdf:type owl:NamedIndividual ,
+                :Tanrılar ;
+       :kontrolEder :KaranlıkMağaralar ;
+       :hakimiyet_alanı "Yeraltı ve karanlık" ;
+       :kutsal_güç_türü "Yeraltı, ölüm" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ErlikInanci
+:ErlikInanci rdf:type owl:NamedIndividual ,
+                      :İnançSistemi ;
+             :inanç_türü "Erlik inanışı" ;
+             :kutsal_günler "Ölüler bayramı, kış mevsimi ortası" ;
+             :ritüel_gereksinimleri "Yeraltı sunaklarına sunu bırakma" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GeceHan
+:GeceHan rdf:type owl:NamedIndividual ,
+                  :Tanrılar ;
+         :gucVerir :AybikeHatun ;
+         :yonetir :KadimMabet ;
+         :ad "Gece Han" ;
+         :hakimiyet_alanı "Rüyalar ve yıldızlar" ;
+         :kutsal_güç_türü "Gece ve karanlık sırlar" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GokBijutu
+:GokBijutu rdf:type owl:NamedIndividual ,
+                    :KutsalÖğe ;
+           :kullanım_hakkı 3 ;
+           :kutsiyet_seviyesi 5 ;
+           :köken_hikayesi "GökTanrısı'nın çocuğu tarafından yeryüzüne getirildi" ;
+           :nesne_adı "Gök Biji" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GokTengriInanci
+:GokTengriInanci rdf:type owl:NamedIndividual ,
+                          :İnançSistemi ;
+                 :inanç_türü "Göktanrı inancı" ;
+                 :kutsal_günler "Gün dönümleri, bahar bayramları" ;
+                 :ritüel_gereksinimleri "Kuraklıkta kurban, bahar kutlamasında ateş yakma" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GokYay
+:GokYay rdf:type owl:NamedIndividual ,
+                 :Silahlar ;
+        :dayanıklılık 20 ;
+        :hasar_gücü 25 ;
+        :kullanım_hakkı 1 ;
+        :kutsiyet_seviyesi 2 ;
+        :köken_hikayesi "GüneşTanrısı'nın ışınlarından dokundu" ;
+        :nesne_adı "Gök Yay" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GolgeTilsimi
+:GolgeTilsimi rdf:type owl:NamedIndividual ,
+                       :Tılsımlar ;
+              :büyü_gücü 18 ;
+              :etki_alanı "Görünmezlik ve gölgeyi kontrol" ;
+              :kullanım_süresi 6 ;
+              :nesne_adı "Gölge Tılsımı" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GucToreleri
+:GucToreleri rdf:type owl:NamedIndividual ,
+                      :TöreSistemi ;
+             :belirler :ElciMuzakeresi ;
+             :töre_türü "Gücün han üzerinde temsili töreler" ;
+             :uygulama_alanı "Savaş sonrası ödül törenleri" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GumusAyna
+:GumusAyna rdf:type owl:NamedIndividual ,
+                    :KutsalÖğe ;
+           :kullanım_hakkı 2 ;
+           :kutsiyet_seviyesi 4 ;
+           :köken_hikayesi "Ay Tanrısı'nın ışığını yansıtır" ;
+           :nesne_adı "Gümüş Ayna" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GumusIslemeSanati
+:GumusIslemeSanati rdf:type owl:NamedIndividual ,
+                            :KültürelSistem ;
+                   :kulturel_aktif_durum "false"^^xsd:boolean ;
+                   :kulturel_etki_alanı "El sanatları, takı ve silah süsleme" ;
+                   :sistem_adı "Gümüş İşleme Sanatı" ;
+                   :önem_derecesi 5 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GunTutamagi
+:GunTutamagi rdf:type owl:NamedIndividual ,
+                      :RitüelNesneleri ;
+             :gerekli_güç 10 ;
+             :kullanım_şartı "Güneş doğarken kullanılır" ;
+             :nesne_adı "Gün Tutamağı" ;
+             :ritüel_türü "Güneş duası" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GökTepesi
+:GökTepesi rdf:type owl:NamedIndividual ,
+                    :KutsalAlanlar ;
+           :barındırır :KutluAteş ;
+           :konum "Göğe yakın bir dağ zirvesi" ;
+           :kutsiyet_türü "Tengri Ayinleri" ;
+           :mekan_adı "Gök Tepesi" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#GölRuhu
+:GölRuhu rdf:type owl:NamedIndividual ,
+                  :Ruhlar ;
+         :ad "Göl Ruhu" ;
+         :etki_zamanı "Gece yarısı" ;
+         :ruh_türü "Sularda yaşayan mistik varlık" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#HanlikTacGorevi
+:HanlikTacGorevi rdf:type owl:NamedIndividual ,
+                          :GörevSistemi ;
+                 :üretir :KutluAteş ;
+                 :görev_türü "Han seçme töreni görevi" ;
+                 :süre_sınırı 3 ;
+                 :zorluk_seviyesi 5 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#HunOvalari
+:HunOvalari rdf:type owl:NamedIndividual ,
+                     :YaşamAlanları ;
+            :sağlar :YünDepolari ;
+            :kaynak_zenginliği 4 ;
+            :konum "Geniş bozkır düzlükleri" ;
+            :mekan_adı "Hun Ovaları" ;
+            :nüfus_kapasitesi 3000 ;
+            :savunma_gücü 5 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KadimMabet
+:KadimMabet rdf:type owl:NamedIndividual ,
+                     :KutsalAlanlar ;
+            :barındırır :KutluAteş ;
+            :konum "Tarihi kent harabeleri" ;
+            :kutsiyet_türü "Çoklu tanrılar tapımı" ;
+            :mekan_adı "Kadim Mabet" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KamDavulu
+:KamDavulu rdf:type owl:NamedIndividual ,
+                    :RitüelNesneleri ;
+           :gerekli_güç 5 ;
+           :kullanım_şartı "Gece yarısı töreni" ;
+           :nesne_adı "Kam Davulu" ;
+           :ritüel_türü "Şaman ayini" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KamRuhu
+:KamRuhu rdf:type owl:NamedIndividual ,
+                  :Ruhlar ;
+         :bağlıOlduğuİnanç :Şamanizm ;
+         :bulunur :ÖtükenOrmanı ;
+         :ritüelKullanır :KutluAteş ;
+         :ad "Kam Ruhu" ;
+         :etki_zamanı "Gece yarısı" ;
+         :ruh_türü "Şamanik Rehber" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KanliKurt
+:KanliKurt rdf:type owl:NamedIndividual ,
+                    :Yaratıklar ;
+           :ad "Kanlı Kurt" ;
+           :etki_alanı "Yırtıcı av" ;
+           :yaratık_güç_seviyesi 7 ;
+           :yaşam_alanı "AltayDaglari" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KapadokyaDiyari
+:KapadokyaDiyari rdf:type owl:NamedIndividual ,
+                          :YerVeMekan ;
+                 :boyut 1000 ;
+                 :konum "Peri bacaları ve yeraltı şehirleri" ;
+                 :mekan_adı "Kapadokya Diyarı" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KaraTegin
+:KaraTegin rdf:type owl:NamedIndividual ,
+                    :Kahramanlar ;
+           :etkileşir :ElciMuzakeresi ;
+           :kullanır :UluKılıç ;
+           :ad "Kara Tegin" ;
+           :boy_bağı "KumukBoyu" ;
+           :unvan "Dağ Fatihi" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KaranlıkMağaralar
+:KaranlıkMağaralar rdf:type owl:NamedIndividual ,
+                            :DoğalAlanlar ;
+                   :barındırır :KaranlıkTaş ;
+                   :boyut 3000 ;
+                   :mekan_adı "Karanlık Mağaralar" ;
+                   :mekan_etki_alanı "Karanlık ve mistik yaratıkların barınağı" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KaranlıkTaş
+:KaranlıkTaş rdf:type owl:NamedIndividual ,
+                      :KutsalÖğe ;
+             :kullanım_hakkı 2 ;
+             :kutsiyet_seviyesi 4 ;
+             :köken_hikayesi "Erlik'in yeraltı diyarında oluşmuş, karanlık enerjiyi barındıran bir taş" ;
+             :nesne_adı "Karanlık Taş" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KilicUstaligi
+:KilicUstaligi rdf:type owl:NamedIndividual ,
+                        :OyunMekanik ;
+               :aktif_durum "true"^^xsd:boolean ;
+               :etki_alanı "Yakın dövüş avantajı" ;
+               :mekanik_adı "Kılıç Ustalığı Mekaniği" ;
+               :zorluk_seviyesi 3 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KilicYildirim
+:KilicYildirim rdf:type owl:NamedIndividual ,
+                        :Silahlar ;
+               :dayanıklılık 30 ;
+               :hasar_gücü 35 ;
+               :kullanım_hakkı 2 ;
+               :kutsiyet_seviyesi 3 ;
+               :köken_hikayesi "GökHan'ın şimşeğinden dövüldü" ;
+               :nesne_adı "Kılıç Yıldırım" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KirgizYaylalari
+:KirgizYaylalari rdf:type owl:NamedIndividual ,
+                          :YaşamAlanları ;
+                 :sağlar :AtSürüleri ;
+                 :kaynak_zenginliği 3 ;
+                 :konum "Yüksek rakımlı dağ etekleri" ;
+                 :mekan_adı "Kırgız Yaylaları" ;
+                 :nüfus_kapasitesi 2000 ;
+                 :savunma_gücü 4 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KumukBoyu
+:KumukBoyu rdf:type owl:NamedIndividual ,
+                    :BoylarSistemi ;
+           :şekillendirir :KutsalSavaş ;
+           :boy_adı "Kumuk Boyu" ;
+           :güç_seviyesi 3 ;
+           :nüfus 650 ;
+           :uygulama_alanı "Göçebe hayvancılık" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KurtRuhu
+:KurtRuhu rdf:type owl:NamedIndividual ,
+                   :MitolojikVarlık ;
+          :ad "Kurt Ruhu" ;
+          :etki_alanı "Sürü liderliği ve yol gösterme" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutluAteş
+:KutluAteş rdf:type owl:NamedIndividual ,
+                    :RitüelNesneleri ;
+           :ritüel_türü "Şamanik Ateş Ritüeli" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutluKılıç
+:KutluKılıç rdf:type owl:NamedIndividual ,
+                     :Silahlar ;
+            :dayanıklılık 40 ;
+            :hasar_gücü 30 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutluMızrak
+:KutluMızrak rdf:type owl:NamedIndividual ,
+                      :Silahlar .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutluOrmanlar
+:KutluOrmanlar rdf:type owl:NamedIndividual ,
+                        :DoğalAlanlar .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutsalDağ
+:KutsalDağ rdf:type owl:NamedIndividual ,
+                    :KutsalAlanlar ;
+           :konum "Göğe en yakın yüksek zirve" ;
+           :kutsiyet_türü "Göksel ve bulut ritüelleri" ;
+           :mekan_adı "Kutsal Dağ" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutsalKaynaklar
+:KutsalKaynaklar rdf:type owl:NamedIndividual ,
+                          :KaynakYönetimi ;
+                 :kaynak_türü "Mana" ;
+                 :maksimum_kapasite 500 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutsalOrmanKoruma
+:KutsalOrmanKoruma rdf:type owl:NamedIndividual ,
+                            :GörevSistemi ;
+                   :üretir :KaranlıkTaş ;
+                   :görev_türü "Kutsal ormana saldıran yaratıkları temizleme" ;
+                   :süre_sınırı 2 ;
+                   :zorluk_seviyesi 6 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutsalSavaş
+:KutsalSavaş rdf:type owl:NamedIndividual ,
+                      :SavaşSistemi ;
+             :eğitimKatkısı "Oyuncular, Türk mitolojisi figürlerini öğrenirken strateji de geliştirmiş olur." .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#KutupTundrasi
+:KutupTundrasi rdf:type owl:NamedIndividual ,
+                        :DoğalAlanlar ;
+               :etkilenir :Şamanizm ;
+               :boyut 8000 ;
+               :ekosistem_türü "Tundra" ;
+               :mekan_adı "Kutup Tundrası" ;
+               :mekan_etki_alanı "Aşırı soğuk, çetin yaşam koşulları" ;
+               :tehlike_seviyesi 8 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#MeteHan
+:MeteHan rdf:type owl:NamedIndividual ,
+                  :Kahramanlar ;
+         :bağlıOlduğuİnanç :Şamanizm ;
+         :kullanır :KaranlıkTaş ,
+                   :KutluKılıç ,
+                   :UluKılıç ;
+         :yönetir :OğuzBoyu ;
+         :ad "Mete Han" ;
+         :unvan "Büyük Komutan" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#OrhunVadisi
+:OrhunVadisi rdf:type owl:NamedIndividual ,
+                      :YerVeMekan ;
+             :boyut 800 ;
+             :konum "Orta Asya'nın kalbi" ;
+             :mekan_adı "Orhun Vadisi" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#OğuzBoyu
+:OğuzBoyu rdf:type owl:NamedIndividual ,
+                   :BoylarSistemi .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#PamukKale
+:PamukKale rdf:type owl:NamedIndividual ,
+                    :YerVeMekan ;
+           :boyut 600 ;
+           :konum "Beyaz traverten oluşumları" ;
+           :mekan_adı "Pamuk Kale" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#PeçenekBoyu
+:PeçenekBoyu rdf:type owl:NamedIndividual ,
+                      :BoylarSistemi ;
+             :şekillendirir :KutsalSavaş ;
+             :boy_adı "Peçenek Boyu" ;
+             :güç_seviyesi 4 ;
+             :nüfus 700 ;
+             :uygulama_alanı "Sınır koruma ve avcılık" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#SavaşTöreleri
+:SavaşTöreleri rdf:type owl:NamedIndividual ,
+                        :TöreSistemi .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#SavunmaDuvari
+:SavunmaDuvari rdf:type owl:NamedIndividual ,
+                        :SavaşSistemi ;
+               :kullanir :TuzOcaklari ;
+               :aktif_durum "true"^^xsd:boolean ;
+               :etki_alanı "Kale savunması ve lojistik" ;
+               :mekanik_adı "Savunma Duvarı Mekaniği" ;
+               :zorluk_seviyesi 4 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#SelengaVadisi
+:SelengaVadisi rdf:type owl:NamedIndividual ,
+                        :YaşamAlanları ;
+               :sağlar :TuzOcaklari ;
+               :kaynak_zenginliği 5 ;
+               :konum "Nehrin ve vadi sisteminin birleştiği yer" ;
+               :mekan_adı "Selenga Vadisi" ;
+               :nüfus_kapasitesi 1500 ;
+               :savunma_gücü 3 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#SuKutsalMeras
+:SuKutsalMeras rdf:type owl:NamedIndividual ,
+                        :KutsalAlanlar ;
+               :barındırır :KaranlıkTaş ;
+               :konum "Büyük gölün kenarı" ;
+               :kutsiyet_türü "Su Anası'na adanmış" ;
+               :mekan_adı "Su Kutsal Merası" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#SuPerisi
+:SuPerisi rdf:type owl:NamedIndividual ,
+                   :MitolojikVarlık ;
+          :ad "Su Perisi" ;
+          :etki_alanı "Su kaynaklarını koruma" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Tengri
+:Tengri rdf:type owl:NamedIndividual ,
+                 :Tanrılar ;
+        :gucVerir :MeteHan ;
+        :korur :SavaşTöreleri ;
+        :yonetir :KutsalDağ ,
+                 :ÖtükenOrmanı ;
+        :hakimiyet_alanı "Gökyüzü" ;
+        :kutsal_güç_türü "Gök ve hava olayları" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#TopuzAteş
+:TopuzAteş rdf:type owl:NamedIndividual ,
+                    :Silahlar ;
+           :dayanıklılık 25 ;
+           :hasar_gücü 40 ;
+           :kullanım_hakkı 2 ;
+           :kutsiyet_seviyesi 4 ;
+           :köken_hikayesi "Ateş Tanrısı'nın öfkesiyle şekillendi" ;
+           :nesne_adı "Topuz Ateş" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#TuzOcaklari
+:TuzOcaklari rdf:type owl:NamedIndividual ,
+                      :KaynakYönetimi ;
+             :kaynak_türü "Tuz" ;
+             :maksimum_kapasite 200 ;
+             :yenilenme_hızı 1 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#UluKılıç
+:UluKılıç rdf:type owl:NamedIndividual ,
+                   :Silahlar ;
+          :dayanıklılık 50 ;
+          :hasar_gücü 45 ;
+          :kullanım_hakkı 1 ;
+          :kutsiyet_seviyesi 3 ;
+          :köken_hikayesi "Tengri'nin göğün katmanlarından düşen yıldırım ile dövüldü." ;
+          :nesne_adı "Ulu Kılıç" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Umay
+:Umay rdf:type owl:NamedIndividual ,
+               :Tanrılar ;
+      :gucVerir :MeteHan ;
+      :hakimiyet_alanı "Hayat ve bereket" ;
+      :kutsal_güç_türü "Koruyucu anne ruhu, doğum ve bereket" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#UmayKultu
+:UmayKultu rdf:type owl:NamedIndividual ,
+                    :İnançSistemi ;
+           :inanç_türü "Umay kültü" ;
+           :kutsal_günler "Çocuk doğumu dönemleri" ;
+           :ritüel_gereksinimleri "Anne ve bebeğe şamanik dualar" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#UygurBoyu
+:UygurBoyu rdf:type owl:NamedIndividual ,
+                    :BoylarSistemi ;
+           :şekillendirir :KutsalSavaş ;
+           :boy_adı "Uygur Boyu" ;
+           :güç_seviyesi 5 ;
+           :nüfus 900 ;
+           :uygulama_alanı "Yerleşik tarım ve ticaret" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#YagmurMuskasi
+:YagmurMuskasi rdf:type owl:NamedIndividual ,
+                        :RitüelNesneleri ;
+               :gerekli_güç 8 ;
+               :kullanım_şartı "Kuraklık mevsiminde yakılır" ;
+               :nesne_adı "Yağmur Muskası" ;
+               :ritüel_türü "Yağmur çağırma" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#YayEgilmesi
+:YayEgilmesi rdf:type owl:NamedIndividual ,
+                      :OyunMekanik ;
+             :aktif_durum "true"^^xsd:boolean ;
+             :etki_alanı "Uzun menzilli ok atışı" ;
+             :mekanik_adı "Yay Eğilmesi Mekaniği" ;
+             :zorluk_seviyesi 2 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#YeminToreleri
+:YeminToreleri rdf:type owl:NamedIndividual ,
+                        :TöreSistemi ;
+               :belirler :BoyIttifaki ;
+               :töre_türü "Eller göğe kaldırılarak yemin etmek" ;
+               :uygulama_alanı "Diplomasi paktı veya anlaşma öncesi" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#YerSuRuhları
+:YerSuRuhları rdf:type owl:NamedIndividual ,
+                       :Ruhlar .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#YerTasi
+:YerTasi rdf:type owl:NamedIndividual ,
+                  :KutsalÖğe ;
+         :kullanım_hakkı 1 ;
+         :kutsiyet_seviyesi 2 ;
+         :köken_hikayesi "ToprakAna'nın göbeğinden kopmuş kaya" ;
+         :nesne_adı "Yer Taşı" .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#YünDepolari
+:YünDepolari rdf:type owl:NamedIndividual ,
+                      :KaynakYönetimi ;
+             :kaynak_türü "Yün" ;
+             :maksimum_kapasite 400 ;
+             :yenilenme_hızı 2 .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ÖtükenOrmanı
+:ÖtükenOrmanı rdf:type owl:NamedIndividual ,
+                       :KutsalAlanlar ;
+              :barındırır :KutluAteş .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#Şamanizm
+:Şamanizm rdf:type owl:NamedIndividual ,
+                   :İnançSistemi .
+
+
+###  http://www.semanticweb.org/recep/ontologies/2024/10/TurkMitologyAndPcGames#ŞifaTılsımı
+:ŞifaTılsımı rdf:type owl:NamedIndividual ,
+                      :Tılsımlar ;
+             :nesne_adı "Şifa Tılsımı" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
